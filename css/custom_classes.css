@@ -1,0 +1,198 @@
+/* debugging classes */
+.debug_full_dark * {
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.debug_full_light * {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.debug_border_light * {
+  border: 1px solid white;
+}
+
+.debug_border_dark * {
+  border: 1px solid black;
+}
+
+.big {
+  width: 100%;
+  height: 2000px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+/* general wrappers */
+.wrapper_height {
+  height: 100%;
+}
+
+/* positions */
+.pos_rel {
+  position: relative;
+}
+
+.float_lt {
+  float: left;
+}
+
+.float_rt {
+  float: right;
+}
+
+.c_vh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* text utilities */
+.fs_16 {
+  font-size: 16px;
+}
+
+.fs_20 {
+  font-size: 20px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.fs_32 {
+  font-size: 32px;
+}
+
+.fs_48 {
+  font-size: 48px;
+}
+
+.fs_76 {
+  font-size: 76px;
+}
+
+.fs_88 {
+  font-size: 88px;
+}
+
+.fw_700 {
+  font-weight: 700;
+}
+
+/* color utilities */
+.col_w {
+  color: white;
+}
+
+/* margin utilities */
+.mg_top_10 {
+  margin-top: 10px;
+}
+
+.mg_top_20 {
+  margin-top: 20px;
+}
+
+.mg_top_30 {
+  margin-top: 30px;
+}
+
+.mg_top_40 {
+  margin-top: 40px;
+}
+
+.mg_top_50 {
+  margin-top: 50px;
+}
+
+.mg_top_60 {
+  margin-top: 60px;
+}
+
+.mg_top_70 {
+  margin-top: 70px;
+}
+
+.mg_top_80 {
+  margin-top: 80px;
+}
+
+.mg_top_90 {
+  margin-top: 90px;
+}
+
+.mg_top_100 {
+  margin-top: 100px;
+}
+
+.mg_bt_10 {
+  margin-bottom: 10px;
+}
+
+.mg_bt_20 {
+  margin-bottom: 20px;
+}
+
+.mg_bt_30 {
+  margin-bottom: 30px;
+}
+
+.mg_bt_40 {
+  margin-bottom: 40px;
+}
+
+.mg_bt_50 {
+  margin-bottom: 50px;
+}
+
+.mg_bt_60 {
+  margin-bottom: 60px;
+}
+
+.mg_bt_70 {
+  margin-bottom: 70px;
+}
+
+.mg_bt_80 {
+  margin-bottom: 80px;
+}
+
+.mg_bt_90 {
+  margin-bottom: 90px;
+}
+
+.mg_bt_100 {
+  margin-bottom: 100px;
+}
+
+.mg_rt_5 {
+  margin-right: 5px;
+}
+
+.mg_rt_10 {
+  margin-right: 10px;
+}
+
+.mg_rt_15 {
+  margin-right: 15px;
+}
+
+.mg_rt_20 {
+  margin-right: 20px;
+}
+
+.mg_rt_25 {
+  margin-right: 25px;
+}
+
+/* padding utilities */
+.pad_10_r {
+  padding: 10px;
+}
+
+.pad_80_lr {
+  padding: 0 80px;
+}
