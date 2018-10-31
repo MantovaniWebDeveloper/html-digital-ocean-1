@@ -196,3 +196,45 @@
 .jumbotron_main_form .btn_empty a:hover {
   background-color: #eeeeee;
 }
+
+/* CUSTOMERS STORIES SECTION */
+.stories {
+  background-color: #f3f5f9;
+  height: 280px;
+  width: 100%;
+}
+
+.stories_customers {
+  margin: 0 auto;
+}
+
+.stories h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #939eb5;
+}
+
+.stories .view_more>a {
+  font-weight: 700;
+  color: #276bf6;
+}
+
+.stories .view_more>a:hover {
+  text-decoration: none;
+  color: #2361de;
+}
+
+.stories_customers {
+  height: 78px;
+}
+
+.customers_item {
+  display: inline-block;
+  padding: 0 20px;
+  height: 100%;
+}
+
+.customers_item>img {
+  display: inline-block;
+  height: 100%;
+}
