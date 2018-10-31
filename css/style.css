@@ -11,6 +11,10 @@
   color: #0069ff;
 }
 
+.col_lg {
+  color: #4b5d82;
+}
+
 /* HEADER SECTION */
 .header {
   position: fixed;
@@ -267,11 +271,9 @@
 .list_wrapper ul {
   list-style-type: none;
   padding: 0;
-  transition: 1s ease;
 }
 
 .list_wrapper li {
-  transition: 1s ease;
   font-size: 18px;
   font-weight: 700;
   padding: 20px;
@@ -308,4 +310,80 @@
 .col_item p {
   color: #4f6084;
   font-size: 16px;
+}
+
+/* developers section */
+.developers {
+  background-color: #f3f5f9;
+  padding: 140px 0;
+}
+
+.developers>.container {
+  border: 1px solid blue;
+}
+
+.developers_title h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #031b4e;
+}
+
+.developers_desc p {
+  font-size: 20px;
+  color: #4f6084;
+  margin-bottom: 70px;
+}
+
+.developers_screen>img {
+  max-width: 70%;
+}
+
+.developers_screen::before {
+  content: '<';
+  font-size: 40px;
+  padding-right: 30px;
+  color: #acb4c7;
+}
+
+.developers_screen::after {
+  content: '>';
+  font-size: 40px;
+  padding-left: 30px;
+  color: #031b4e;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  .developers_screen::before,
+  .developers_screen::after {
+    content: '';
+  }
+}
+
+.developers_pagination ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.developers_pagination li {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.developers_pagination .page {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  border: 2px solid #0069ff;
+  transition: 1s ease;
+}
+
+.developers_pagination a.page.active_page {
+  background-color: #0069ff;
+}
+
+.developers_pagination a.page:not(.active_page):hover {
+  background-color: #cad9f8;
 }
