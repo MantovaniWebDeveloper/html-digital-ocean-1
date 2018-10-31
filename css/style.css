@@ -200,7 +200,6 @@
 /* CUSTOMERS STORIES SECTION */
 .stories {
   background-color: #f3f5f9;
-  height: 280px;
   width: 100%;
 }
 
@@ -224,17 +223,22 @@
   color: #2361de;
 }
 
-.stories_customers {
-  height: 78px;
+.customers_item>img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .customers_item {
-  display: inline-block;
-  padding: 0 20px;
   height: 100%;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid blue;
 }
 
-.customers_item>img {
-  display: inline-block;
-  height: 100%;
+@media screen and (max-width: 480px) {
+  .customers_item>img {
+    display: inline-block;
+    max-height: 78px;
+    max-width: 160px;
+  }
 }
