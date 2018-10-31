@@ -387,3 +387,57 @@
 .developers_pagination a.page:not(.active_page):hover {
   background-color: #cad9f8;
 }
+
+/* developers section */
+.features {
+  background-color: white;
+  padding: 100px 0;
+}
+
+.features h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #031b4e;
+}
+
+.features h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #031b4e;
+}
+
+.features p {
+  font-size: 16px;
+  color: #4f6084;
+}
+
+.features .features_asset {
+  margin-top: 50px;
+}
+
+.features .features_desc,
+.features .features_link {
+  margin-top: 20px;
+}
+
+.features .features_link a {
+  font-size: 16px;
+  color: #0069ff;
+}
+
+.features .features_link a:hover {
+  text-decoration: none;
+  color: #2361de;
+}
+
+.features .features_link a::after {
+  content: "\f105";
+  margin-left: 10px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
