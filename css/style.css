@@ -442,3 +442,73 @@
   font-weight: 900;
   font-size: 16px;
 }
+
+/* world map section */
+.world_map {
+  padding: 120px 0;
+  background-image: url('../assets/world_map.svg'), linear-gradient(180deg, #0047c6 0, #001d99);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.world_map_tile>h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.world_map_table table {
+  width: 100%;
+  margin-top: 80px;
+  border-collapse: collapse;
+}
+
+@media screen and (max-width:992px) {
+  .world_map {
+    padding: 50px 0;
+  }
+
+  .world_map_table table {
+    margin-top: 40px;
+  }
+}
+
+.world_map_table tr {
+  border-bottom: 1px solid white;
+}
+
+.world_map_table td {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.world_map_table td.city_code {
+  font-weight: 700;
+  color: white;
+}
+
+.world_map_table td.city_desc {
+  color: #9aacde;
+}
+
+.world_map_table td.city_link a {
+  color: #03d7d2;
+}
+
+.world_map_table td.city_link a:hover {
+  text-decoration: none;
+  color: #2361de;
+}
+
+.world_map_table td.city_link a::after {
+  content: "\f105";
+  margin-left: 10px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 13px;
+}
