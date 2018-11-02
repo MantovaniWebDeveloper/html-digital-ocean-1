@@ -101,7 +101,7 @@
                 <a href="#">Create your account</a>
               </div>
               <div class="btn_empty mg_top_15 pos_rel">
-                <img class="c_v" src="assets/google_logo_small.png" alt="">
+                <img class="center_v" src="assets/google_logo_small.png" alt="">
                 <a href="#">Sign up with Google</a>
               </div>
               <div class="mg_top_15">
@@ -150,9 +150,7 @@
         <div class="row mg_top_20">
           <div class="col-xs-12">
             <div class="view_more text-center">
-              <a href="">
-                <span class="fs_16">View customer stories &gt;</span>
-              </a>
+              <a class="fs_16 show_more" href=""><span>View customer stories</span></a>
             </div>
           </div>
         </div>
@@ -254,10 +252,16 @@
         </div>
         <!-- developers image -->
         <div class="row">
-          <div class="col-xs-12 text-center developers_screen">
-            <a href=""><i class="fas fa-angle-left"></i></a>
-            <img src="assets/developer_screen.jpg" alt="">
-            <a class="developers_screen_active" href=""><i class="fas fa-angle-right"></i></a>
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="hidden-xs pagination_arrow arrow_left center_v">
+              <a href="#"></a>
+            </div>
+            <div class="developers_screen text-center">
+              <img src="assets/developer_screen.jpg" alt="">
+            </div>
+            <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
+              <a href="#"></a>
+            </div>
           </div>
         </div>
         <!-- developers image description -->
@@ -268,23 +272,25 @@
             </div>
           </div>
         </div>
-        <!-- developers dots -->
+        <!-- developers pagination -->
         <div class="row text-center">
-          <div class="col-xs-12 developers_pagination mg_top_30">
-            <ul>
-              <li>
-                <a class="page active_page" href=""></a>
-              </li>
-              <li>
-                <a class="page" href=""></a>
-              </li>
-              <li>
-                <a class="page" href=""></a>
-              </li>
-              <li>
-                <a class="page" href=""></a>
-              </li>
-            </ul>
+          <div class="col-xs-12">
+            <div class="pagination_links mg_top_30">
+              <ul>
+                <li>
+                  <a class="page_item current_page" href=""></a>
+                </li>
+                <li>
+                  <a class="page_item" href=""></a>
+                </li>
+                <li>
+                  <a class="page_item" href=""></a>
+                </li>
+                <li>
+                  <a class="page_item" href=""></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -362,32 +368,32 @@
                 <tr>
                   <td class="city_code text-uppercase">ams2</td>
                   <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">ams3</td>
                   <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">blr1</td>
                   <td class="city_desc text-capitalize">Bangalore, India</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">fra1</td>
                   <td class="city_desc text-capitalize">Frankfurt, Germany</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">lon1</td>
                   <td class="city_desc text-capitalize">London, UK</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">nyc1</td>
                   <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
               </table>
             </div>
@@ -398,34 +404,111 @@
                 <tr>
                   <td class="city_code text-uppercase">nyc2</td>
                   <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">nyc3</td>
                   <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">sf01</td>
                   <td class="city_desc text-capitalize">San Francisco, USA</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">sf02</td>
                   <td class="city_desc text-capitalize">San Francisco, USA</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">sgp1</td>
                   <td class="city_desc text-capitalize">singapore</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
                 <tr>
                   <td class="city_code text-uppercase">tor1</td>
                   <td class="city_desc text-capitalize">Toronto, Canada</td>
-                  <td class="city_link text-right"><a href>Test speed</a></td>
+                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
                 </tr>
               </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DEVELOPMENT TEAMS SECTION -->
+    <div class="teams">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="teams_title text-center mg_bt_40">
+              <h2>Development teams love DigitalOcean</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+            <div class="hidden-xs pagination_arrow arrow_left center_v">
+              <a href="#"></a>
+            </div>
+            <div class="teams_love_box text-center">
+              <div class="teams_love_box_image mg_bt_50">
+                <img src="assets/rockerbox.png" alt="">
+              </div>
+              <div class="teams_love_box_desc mg_bt_30">
+                <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient".</p>
+              </div>
+              <div class="teams_love_box_name mg_bt_5">
+                <span>Rick O'Toole</span>
+              </div>
+              <div class="teams_love_box_role mg_bt_30">
+                <span>Co-founder and CTO</span>
+              </div>
+              <div class="teams_love_box_link">
+                <a class="show_more" href="#">Read story</a>
+              </div>
+            </div>
+            <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-12">
+            <div class="pagination_links mg_top_30">
+              <ul>
+                <li>
+                  <a class="page_item current_page" href=""></a>
+                </li>
+                <li>
+                  <a class="page_item" href=""></a>
+                </li>
+                <li>
+                  <a class="page_item" href=""></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER TOP SECTION -->
+    <div class="footer">
+      <div class="footer_top text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="footer_top_title">
+                <h3>Get started now.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row mg_top_40">
+            <div class="col-xs-12">
+              <div class="footer_top_create">
+                <a href="#">Create your account</a>
+              </div>
             </div>
           </div>
         </div>

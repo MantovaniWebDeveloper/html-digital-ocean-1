@@ -15,6 +15,102 @@
   color: #4b5d82;
 }
 
+/* PAGINATION CLASSES */
+.pagination_links ul {
+  cursor: default;
+  list-style-type: none;
+  padding: 0;
+}
+
+.pagination_links li {
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.pagination_links .page_item {
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  border: 2px solid #0069ff;
+  transition: 1s ease;
+}
+
+.pagination_links a.page_item.current_page {
+  background-color: #0069ff;
+}
+
+.pagination_links a.page_item:not(.current_page):hover {
+  background-color: #cad9f8;
+}
+
+/*PAGINATION ARROWS CLASSES*/
+.pagination_arrow.arrow_right a::after,
+.pagination_arrow.arrow_left a::after {
+  content: '';
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  transition: .5s ease;
+}
+
+.pagination_arrow.arrow_left {
+  left: -30px;
+  font-size: 40px;
+}
+
+.pagination_arrow.arrow_right {
+  right: -30px;
+  font-size: 40px;
+}
+
+.pagination_arrow.arrow_right a::after {
+  content: "\f105";
+}
+
+.pagination_arrow.arrow_left a::after {
+  content: "\f104";
+}
+
+.pagination_arrow>a {
+  /* default arrows status is not active */
+  color: #acb4c7;
+  transition: .5s ease;
+}
+
+.pagination_arrow>a:hover {
+  text-decoration: none;
+}
+
+.pagination_arrow:not(.arrow_active)>a:hover {
+  /* no pointer over not active arrow */
+  cursor: default;
+}
+
+.pagination_arrow.arrow_active a::after {
+  /* active arrow color */
+  color: #031b4e;
+}
+
+.pagination_arrow.arrow_active:hover a::after {
+  color: #0069ff;
+}
+
+/* SHOW MORE SYMBOL '>' */
+a.show_more::after {
+  content: "\f105";
+  margin-left: 10px;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+}
+
 /* HEADER SECTION */
 .header {
   position: fixed;
@@ -312,7 +408,7 @@
   font-size: 16px;
 }
 
-/* developers section */
+/* DEVELOPERS SECTION */
 .developers {
   background-color: #f3f5f9;
   padding: 140px 0;
@@ -331,65 +427,10 @@
 }
 
 .developers_screen>img {
-  max-width: 70%;
+  width: 100%;
 }
 
-.developers_screen>a>i {
-  font-size: 40px;
-}
-
-.developers_screen>a:first-child>i {
-  color: #acb4c7;
-  padding-right: 30px;
-}
-
-.developers_screen>a:last-child>i {
-  color: #acb4c7;
-  padding-left: 30px;
-}
-
-@media screen and (max-width: 768px) {
-  .developers_screen>a>i {
-    display: none;
-  }
-}
-
-.developers_screen>a.developers_screen_active i:hover {
-  color: #031b4e;
-}
-
-.developers_screen>a:not(.developers_screen_active) i:hover {
-  cursor: default;
-}
-
-.developers_pagination ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.developers_pagination li {
-  display: inline-block;
-  padding: 0 4px;
-}
-
-.developers_pagination .page {
-  display: inline-block;
-  height: 9px;
-  width: 9px;
-  border-radius: 50%;
-  border: 2px solid #0069ff;
-  transition: 1s ease;
-}
-
-.developers_pagination a.page.active_page {
-  background-color: #0069ff;
-}
-
-.developers_pagination a.page:not(.active_page):hover {
-  background-color: #cad9f8;
-}
-
-/* developers section */
+/* FEATURE SECTION */
 .features {
   background-color: white;
   padding: 100px 0;
@@ -443,7 +484,7 @@
   font-size: 16px;
 }
 
-/* world map section */
+/* WORLD MAP SECTION */
 .world_map {
   padding: 120px 0;
   background-image: url('../assets/world_map.svg'), linear-gradient(180deg, #0047c6 0, #001d99);
@@ -492,16 +533,16 @@
   color: #9aacde;
 }
 
-.world_map_table td.city_link a {
+.world_map_table td a.city_link {
   color: #03d7d2;
 }
 
-.world_map_table td.city_link a:hover {
+.world_map_table td a.city_link:hover {
   text-decoration: none;
   color: #2361de;
 }
 
-.world_map_table td.city_link a::after {
+/* .world_map_table td.city_link a::after {
   content: "\f105";
   margin-left: 10px;
   font-style: normal;
@@ -511,4 +552,81 @@
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 13px;
+} */
+/* TEAMS SECTION */
+.teams {
+  background-color: #f3f5f9;
+  padding: 120px 0 150px;
+}
+
+.teams_title>h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #031b4e;
+}
+
+.teams_love_box {
+  background-color: white;
+  border: 1px solid #e4e8ed;
+  border-radius: 5px;
+  padding: 30px 45px 80px;
+}
+
+.teams_love_box_image>img {
+  max-width: 175px;
+  height: auto;
+}
+
+.teams_love_box_desc>p {
+  font-size: 22px;
+  color: #4f6084;
+}
+
+.teams_love_box_name>span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #4f6084;
+}
+
+.teams_love_box_role>span {
+  font-size: 12px;
+  color: #73809c;
+}
+
+.teams_love_box_link a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0069ff;
+}
+
+.teams_love_box_link a:hover {
+  text-decoration: none;
+  color: #2361de;
+}
+
+/* FOOTER TOP SECTION */
+.footer_top {
+  padding: 60px 0;
+  background-image: linear-gradient(180deg, #0242bc 0, #001e9a);
+}
+
+.footer_top_title>h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer_top_create>a {
+  background-color: white;
+  color: #276bf6;
+  border-radius: 4px;
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer_top_create>a:hover {
+  background-color: #ced6ec;
+  text-decoration: none;
+  color: #276bf6;
 }
