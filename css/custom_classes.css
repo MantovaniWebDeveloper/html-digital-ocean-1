@@ -62,16 +62,44 @@
 }
 
 /* text utilities */
+.fw_300 {
+  font-weight: 300;
+}
+
+.fw_400 {
+  font-weight: 400;
+}
+
+.fw_700 {
+  font-weight: 700;
+}
+
+.fw_900 {
+  font-weight: 900;
+}
+
 .fs_12 {
   font-size: 12px;
+}
+
+.fs_14 {
+  font-size: 14px;
 }
 
 .fs_16 {
   font-size: 16px;
 }
 
+.fs_18 {
+  font-size: 18px;
+}
+
 .fs_20 {
   font-size: 20px;
+}
+
+.fs_22 {
+  font-size: 22px;
 }
 
 .fs_24 {

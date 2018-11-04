@@ -4,513 +4,639 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
     <!-- bootstrap here -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- custom classes here -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glassdoor.css">
     <link rel="stylesheet" href="css/custom_classes.css">
-    <title></title>
+    <title>DigitalOcean: Cloud Computing, Simplicity at Scale</title>
   </head>
 
   <body>
-    <!-- header nav bar -->
-    <div class="header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-xs-10">
-            <div class="header_logo">
-              <a href=""><img class="mg_top_12" src="assets/main_logo.svg" alt=""></a>
-            </div>
-          </div>
-          <div class="visible-lg-block col-lg-5">
-            <div class="header_left">
-              <div class="header_left_item float_lt mg_rt_5 mg_lt_40">
-                <a href="#">Products</a>
-              </div>
-              <div class="header_left_item float_lt mg_rt_25">
-                <a href=""><i class="fas fa-caret-down"></i></a>
-              </div>
-              <div class="header_left_item float_lt mg_rt_25">
-                <a href="#">Customers</a>
-              </div>
-              <div class="header_left_item float_lt mg_rt_5">
-                <a href="#">Community</a>
-              </div>
-              <div class="header_left_item float_lt mg_rt_25">
-                <a href=""><i class="fas fa-caret-down"></i></a>
-              </div>
-              <div class="header_left_item float_lt">
-                <a href="#">Pricing</a>
+    <div class="body_wrapper pos_rel">
+      <!-- HEADER NAV BAR -->
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-xs-10">
+              <div class="header_logo tooltip_wrapper">
+                <span class="tooltip_content">OceanDive home</span>
+                <a href=""><img class="mg_top_12" src="assets/main_logo.svg" alt=""></a>
               </div>
             </div>
-          </div>
-          <div class="visible-lg-block col-lg-5">
-            <div class="header_right float_rt">
-              <div class="header_right_item float_lt mg_rt_25">
-                <a href="#">Docs</a>
-              </div>
-              <div class="header_right_item float_lt mg_rt_5">
-                <a href="#">Support</a>
-              </div>
-              <div class="header_right_item float_lt mg_rt_25">
-                <a href=""><i class="fas fa-caret-down"></i></a>
-              </div>
-              <div class="header_right_item float_lt mg_rt_25">
-                <a href="#">Login</a>
-              </div>
-              <div class="header_right_item float_lt text-capitalize">
-                <a class="btn_sign" href="#">sign up</a>
+            <div class="visible-lg-block col-lg-5">
+              <div class="header_left">
+                <div class="header_left_item float_lt mg_rt_5 mg_lt_40">
+                  <a href="#">Products</a>
+                </div>
+                <div class="header_left_item float_lt mg_rt_25">
+                  <a href=""><i class="fas fa-caret-down"></i></a>
+                </div>
+                <div class="header_left_item float_lt mg_rt_25">
+                  <a href="#">Customers</a>
+                </div>
+                <div class="header_left_item float_lt mg_rt_5">
+                  <a href="#">Community</a>
+                </div>
+                <div class="header_left_item float_lt mg_rt_25">
+                  <a href=""><i class="fas fa-caret-down"></i></a>
+                </div>
+                <div class="header_left_item float_lt">
+                  <a href="#">Pricing</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="hidden-lg col-xs-2 hamburger text-right">
-            <a href="#"><i class="fas fa-bars"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- main jumbotron section -->
-    <div class="jumbotron_main">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6">
-            <div class="jumbotron_main_title">
-              <h1>The simplest cloud platform for developers & teams</h1>
+            <div class="visible-lg-block col-lg-5">
+              <div class="header_right float_rt">
+                <div class="header_right_item float_lt mg_rt_25">
+                  <a href="#">Docs</a>
+                </div>
+                <div class="header_right_item float_lt mg_rt_5">
+                  <a href="#">Support</a>
+                </div>
+                <div class="header_right_item float_lt mg_rt_25">
+                  <a href=""><i class="fas fa-caret-down"></i></a>
+                </div>
+                <div class="header_right_item float_lt mg_rt_25">
+                  <a href="#">Login</a>
+                </div>
+                <div class="header_right_item float_lt text-capitalize">
+                  <a class="btn_sign" href="#">sign up</a>
+                </div>
+              </div>
             </div>
-            <div class="jumbotron_main_desc">
-              <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand.</p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-            <div class="jumbotron_main_form text-center">
-              <div class="">
-                <h3 class="col_db">Deploy your app in seconds.</h3>
-              </div>
-              <div class="">
-                <h3 class="col_bl">Get started now.</h3>
-              </div>
-              <div class="mg_top_15">
-                <input type="text" name="" value="" placeholder="Email Address">
-              </div>
-              <div class="mg_top_15">
-                <input type="text" name="" value="" placeholder="Password">
-              </div>
-              <div class="btn_full mg_top_15">
-                <a href="#">Create your account</a>
-              </div>
-              <div class="btn_empty mg_top_15 pos_rel">
-                <img class="center_v" src="assets/google_logo_small.png" alt="">
-                <a href="#">Sign up with Google</a>
-              </div>
-              <div class="mg_top_15">
-                <p class="fs_12">By signing up you agree to the <a href="">Terms of Service</a>.</a>
-              </div>
+            <div class="hidden-lg col-xs-2 hamburger text-right">
+              <a href="#"><i class="fas fa-bars"></i></a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- customers stories section -->
-    <div class="stories">
-      <div class="container">
-        <!-- header row -->
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="text-uppercase text-center">
-              <h2>innovative BUSINESSES trust DIGITALOCEAN</h2>
-            </div>
-          </div>
-        </div>
-        <!-- images row -->
-        <div class="row mg_top_20">
-          <div class="col-xs-12 text-center">
-            <div class="customers_item">
-              <img src="assets/stories_docker.png" alt="">
-            </div>
-            <div class="customers_item">
-              <img src="assets/stories_gitlab.png" alt="">
-            </div>
-            <div class="customers_item">
-              <img src="assets/stories_slack.png" alt="">
-            </div>
-            <div class="customers_item">
-              <img src="assets/stories_hashicorp.png" alt="">
-            </div>
-            <div class="customers_item">
-              <img src="assets/stories_wework.png" alt="">
-            </div>
-            <div class="customers_item">
-              <img src="assets/stories_splunk.png" alt="">
-            </div>
-          </div>
-        </div>
-        <!-- new stories row -->
-        <div class="row mg_top_20">
-          <div class="col-xs-12">
-            <div class="view_more text-center">
-              <a class="fs_16 show_more" href=""><span>View customer stories</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- deploy section -->
-    <div class="deploy">
-      <div class="container">
-        <!-- title row -->
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="deploy_title text-center">
-              <h2>Deploy and scale seamlessly</h2>
-            </div>
-          </div>
-        </div>
-        <!-- paragraph row -->
-        <div class="row mg_top_20">
-          <div class="col-xs-12">
-            <div class="deploy_desc text-center">
-              <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
-            </div>
-          </div>
-        </div>
-        <!-- content row -->
-        <div class="row mg_top_50">
-          <div class="col-lg-2 col-lg-offset-1 col-sm-2 col-xs-12">
-            <div class="list_wrapper">
-              <ul class="text-capitalize">
-                <li class="item_active"><a href="">deploy</a></li>
-                <li><a href="">manage</a></li>
-                <li><a href="">secure</a></li>
-                <li><a href="">scale</a></li>
-                <li><a href="">monitor</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-5 col-xs-6 col_item_wrapper">
-            <div class="col_item">
-              <div class="">
-                <img src="assets/cluster.svg" alt="">
+      <!-- MAIN JUMBOTRON SECTION -->
+      <div class="jumbotron_main">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="jumbotron_main_title">
+                <h1 class="title_h1 col_w">The simplest cloud platform for developers & teams</h1>
               </div>
-              <h3>Cluster deployments</h3>
-              <div class="">
-                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+              <div class="jumbotron_main_desc">
+                <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you’re running one virtual machine or ten thousand.</p>
               </div>
             </div>
-            <div class="col_item mg_top_60">
-              <div class="">
-                <img src="assets/apps.svg" alt="">
-              </div>
-              <h3>One-click apps</h3>
-              <div class="">
-                <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-5 col-xs-6 col_item_wrapper">
-            <div class="col_item">
-              <div class="">
-                <img src="assets/compute.svg" alt="">
-              </div>
-              <h3>Optimized compute types</h3>
-              <div class="">
-                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
-              </div>
-            </div>
-            <div class="col_item mg_top_60">
-              <div class="">
-                <img src="assets/global.svg" alt="">
-              </div>
-              <h3>Global availability</h3>
-              <div class="">
-                <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+            <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+              <div class="jumbotron_main_form text-center">
+                <div class="form_item">
+                  <h3 class="title_h3 col_db">Deploy your app in seconds.</h3>
+                </div>
+                <div class="form_item">
+                  <h3 class="title_h3 col_bl">Get started now.</h3>
+                </div>
+                <div class="form_item mg_top_15">
+                  <input type="text" name="" value="" placeholder="Email Address">
+                </div>
+                <div class="form_item mg_top_15">
+                  <input type="text" name="" value="" placeholder="Password">
+                </div>
+                <div class="form_item btn_full mg_top_15">
+                  <a href="#">Create your account</a>
+                </div>
+                <div class="form_item btn_empty mg_top_15 pos_rel">
+                  <img class="center_v" src="assets/google_logo_small.png" alt="">
+                  <a href="#">Sign up with Google</a>
+                </div>
+                <div class="form_item mg_top_30">
+                  <p class="fs_12">By signing up you agree to the <a href="">Terms of Service</a>.</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- developers section -->
-    <div class="developers">
-      <div class="container">
-        <!-- developers title row -->
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="developers_title text-center">
-              <h2>Designed for developers</h2>
+      <!-- CUSTOMERS STORIES SECTION -->
+      <div class="stories">
+        <div class="container">
+          <!-- header row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="stories_title text-uppercase text-center">
+                <h5 class="title_h5 col_lc">innovative BUSINESSES trust DIGITALOCEAN</h5>
+              </div>
             </div>
           </div>
-        </div>
-        <!-- developers description row -->
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="developers_desc text-center">
-              <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+          <!-- images row -->
+          <div class="row mg_top_20">
+            <div class="col-xs-12 text-center">
+              <div class="customers_item">
+                <img src="assets/stories_docker.png" alt="">
+              </div>
+              <div class="customers_item">
+                <img src="assets/stories_gitlab.png" alt="">
+              </div>
+              <div class="customers_item">
+                <img src="assets/stories_slack.png" alt="">
+              </div>
+              <div class="customers_item">
+                <img src="assets/stories_hashicorp.png" alt="">
+              </div>
+              <div class="customers_item">
+                <img src="assets/stories_wework.png" alt="">
+              </div>
+              <div class="customers_item">
+                <img src="assets/stories_splunk.png" alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <!-- developers image -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-            <div class="hidden-xs pagination_arrow arrow_left center_v">
-              <a href="#"></a>
-            </div>
-            <div class="developers_screen text-center">
-              <img src="assets/developer_screen.jpg" alt="">
-            </div>
-            <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
-              <a href="#"></a>
-            </div>
-          </div>
-        </div>
-        <!-- developers image description -->
-        <div class="row mg_top_30">
-          <div class="col-xs-12">
-            <div class="text-center fs_16 col_lg">
-              <p class="">Create compute servers in 55 seconds or less</p>
-            </div>
-          </div>
-        </div>
-        <!-- developers pagination -->
-        <div class="row text-center">
-          <div class="col-xs-12">
-            <div class="pagination_links mg_top_30">
-              <ul>
-                <li>
-                  <a class="page_item current_page" href=""></a>
-                </li>
-                <li>
-                  <a class="page_item" href=""></a>
-                </li>
-                <li>
-                  <a class="page_item" href=""></a>
-                </li>
-                <li>
-                  <a class="page_item" href=""></a>
-                </li>
-              </ul>
+          <!-- new stories row -->
+          <div class="row mg_top_20">
+            <div class="col-xs-12">
+              <div class="view_more text-center">
+                <a class="fs_16 show_more" href=""><span>View customer stories</span></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- features section -->
-    <div class="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="features_title text-center">
-              <h2>The features your business needs</h2>
+      <!-- DEPLOY SECTION -->
+      <div class="deploy">
+        <div class="container">
+          <!-- title row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="deploy_title text-center">
+                <h2 class="title_h2 col_db">Deploy and scale seamlessly</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-4">
-            <div class="features_asset">
-              <img src="assets/predictable.svg" alt="">
-            </div>
-            <div class="features_title">
-              <h3>Predictable pricing</h3>
-            </div>
-            <div class="features_desc">
-              <p>Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
-            </div>
-            <div class="features_link">
-              <a href="#">Privacy</a>
+          <!-- paragraph row -->
+          <div class="row mg_top_20">
+            <div class="col-xs-12">
+              <div class="deploy_desc text-center">
+                <p class="fs_20 col_pa">Our optimized configuration process saves your team time when running and scaling distributed applications, AI &amp; machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+              </div>
             </div>
           </div>
-          <div class="col-xs-4">
-            <div class="features_asset">
-              <img src="assets/world.svg" alt="">
+          <!-- content row -->
+          <div class="row mg_top_50">
+            <div class="col-lg-2 col-lg-offset-1 col-sm-2 col-xs-12 mg_bt_30">
+              <div class="list_wrapper">
+                <ul class="text-capitalize">
+                  <li class="item_active"><a href="">deploy</a></li>
+                  <li><a href="">manage</a></li>
+                  <li><a href="">secure</a></li>
+                  <li><a href="">scale</a></li>
+                  <li><a href="">monitor</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="features_title">
-              <h3>World-class service</h3>
+            <div class="col-lg-4 col-sm-5 col-xs-6">
+              <div class="deploy_item">
+                <div class="deploy_item_image">
+                  <img src="assets/cluster.svg" alt="">
+                </div>
+                <div class="deploy_item_title">
+                  <h4 class="title_h4 col_db">Cluster deployments</h4>
+                </div>
+                <div class="deploy_item_desc">
+                  <p class="fs_16 col_pa">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                </div>
+              </div>
+              <div class="deploy_item mg_top_60">
+                <div class="deploy_item_image">
+                  <img src="assets/apps.svg" alt="">
+                </div>
+                <div class="deploy_item_title">
+                  <h4 class="title_h4 col_db">One-click apps</h4>
+                </div>
+                <div class="deploy_item_desc">
+                  <p class="fs_16 col_pa">Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                </div>
+              </div>
             </div>
-            <div class="features_desc">
-              <p>Free round-the-clock technical support for all customers. You’ll feel the love.</p>
-            </div>
-            <div class="features_link">
-              <a href="#">Support</a>
-            </div>
-          </div>
-          <div class="col-xs-4">
-            <div class="features_asset">
-              <img src="assets/reliable.svg" alt="">
-            </div>
-            <div class="features_title">
-              <h3>Reliable platform</h3>
-            </div>
-            <div class="features_desc">
-              <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-            </div>
-            <div class="features_link">
-              <a href="#">Security</a>
+            <div class="col-lg-4 col-sm-5 col-xs-6">
+              <div class="deploy_item">
+                <div class="deploy_item_image">
+                  <img src="assets/compute.svg" alt="">
+                </div>
+                <div class="deploy_item_title">
+                  <h4 class="title_h4 col_db">Optimized compute types</h4>
+                </div>
+                <div class="deploy_item_desc">
+                  <p class="fs_16 col_pa">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                </div>
+              </div>
+              <div class="deploy_item mg_top_60">
+                <div class="deploy_item_image">
+                  <img src="assets/global.svg" alt="">
+                </div>
+                <div class="deploy_item_title">
+                  <h4 class="title_h4 col_db">Global availability</h4>
+                </div>
+                <div class="deploy_item_desc">
+                  <p class="fs_16 col_pa">Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- world map section -->
-    <div class="world_map">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-8 col-xs-offset-2">
-            <div class="world_map_tile text-center">
-              <h2>Service your customers around the world from 12 regions.</h2>
+      <!-- developers section -->
+      <div class="developers">
+        <div class="container">
+          <!-- developers title row -->
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="developers_title text-center">
+                <h2 class="title_h2 col_db">Designed for developers</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-md-6">
-            <div class="world_map_table">
-              <table>
-                <tr>
-                  <td class="city_code text-uppercase">ams2</td>
-                  <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">ams3</td>
-                  <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">blr1</td>
-                  <td class="city_desc text-capitalize">Bangalore, India</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">fra1</td>
-                  <td class="city_desc text-capitalize">Frankfurt, Germany</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">lon1</td>
-                  <td class="city_desc text-capitalize">London, UK</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">nyc1</td>
-                  <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-              </table>
+          <!-- developers description row -->
+          <div class="row mg_bt_70">
+            <div class="col-xs-12">
+              <div class="developers_desc text-center">
+                <p class="fs_20 col_pa">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+              </div>
             </div>
           </div>
-          <div class="col-xs-12 col-md-6">
-            <div class="world_map_table">
-              <table>
-                <tr>
-                  <td class="city_code text-uppercase">nyc2</td>
-                  <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">nyc3</td>
-                  <td class="city_desc text-capitalize">New York, USA</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">sf01</td>
-                  <td class="city_desc text-capitalize">San Francisco, USA</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">sf02</td>
-                  <td class="city_desc text-capitalize">San Francisco, USA</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">sgp1</td>
-                  <td class="city_desc text-capitalize">singapore</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-                <tr>
-                  <td class="city_code text-uppercase">tor1</td>
-                  <td class="city_desc text-capitalize">Toronto, Canada</td>
-                  <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
-                </tr>
-              </table>
+          <!-- developers image -->
+          <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+              <div class="hidden-xs pagination_arrow arrow_left center_v">
+                <a href="#"></a>
+              </div>
+              <div class="developers_screen text-center change_opacity">
+                <img src="assets/developer_screen.jpg" alt="">
+              </div>
+              <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <!-- developers image description -->
+          <div class="row mg_top_30">
+            <div class="col-xs-12">
+              <div class="text-center">
+                <p class="fs_16 col_lg">Create compute servers in 55 seconds or less</p>
+              </div>
+            </div>
+          </div>
+          <!-- developers pagination -->
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <div class="pagination_links mg_top_30">
+                <ul>
+                  <li>
+                    <a class="page_item current_page" href=""></a>
+                  </li>
+                  <li>
+                    <a class="page_item" href=""></a>
+                  </li>
+                  <li>
+                    <a class="page_item" href=""></a>
+                  </li>
+                  <li>
+                    <a class="page_item" href=""></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- DEVELOPMENT TEAMS SECTION -->
-    <div class="teams">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="teams_title text-center mg_bt_40">
-              <h2>Development teams love DigitalOcean</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
-            <div class="hidden-xs pagination_arrow arrow_left center_v">
-              <a href="#"></a>
-            </div>
-            <div class="teams_love_box text-center">
-              <div class="teams_love_box_image mg_bt_50">
-                <img src="assets/rockerbox.png" alt="">
-              </div>
-              <div class="teams_love_box_desc mg_bt_30">
-                <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient".</p>
-              </div>
-              <div class="teams_love_box_name mg_bt_5">
-                <span>Rick O'Toole</span>
-              </div>
-              <div class="teams_love_box_role mg_bt_30">
-                <span>Co-founder and CTO</span>
-              </div>
-              <div class="teams_love_box_link">
-                <a class="show_more" href="#">Read story</a>
-              </div>
-            </div>
-            <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
-              <a href="#"></a>
-            </div>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-12">
-            <div class="pagination_links mg_top_30">
-              <ul>
-                <li>
-                  <a class="page_item current_page" href=""></a>
-                </li>
-                <li>
-                  <a class="page_item" href=""></a>
-                </li>
-                <li>
-                  <a class="page_item" href=""></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER TOP SECTION -->
-    <div class="footer">
-      <div class="footer_top text-center">
+      <!-- FEATURES SECTION -->
+      <div class="features">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <div class="footer_top_title">
-                <h3>Get started now.</h3>
+              <div class="features_title text-center">
+                <h2 class="title_h2 col_db">The features your business needs</h2>
               </div>
             </div>
           </div>
-          <div class="row mg_top_40">
+          <div class="row">
+            <div class="col-xs-4">
+              <div class="features_asset mg_top_50">
+                <img src="assets/predictable.svg" alt="">
+              </div>
+              <div class="features_title">
+                <h4 class="title_h4 col_db">Predictable pricing</h4>
+              </div>
+              <div class="features_desc mg_top_20">
+                <p class="fs_16 col_pa">Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+              </div>
+              <div class="features_link mg_top_20">
+                <a class="show_more fs_16 col_lk" href="#">Privacy</a>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="features_asset mg_top_50">
+                <img src="assets/world.svg" alt="">
+              </div>
+              <div class="features_title">
+                <h4 class="title_h4 col_db">World-class service</h4>
+              </div>
+              <div class="features_desc mg_top_20">
+                <p class="fs_16 col_pa">Free round-the-clock technical support for all customers. You’ll feel the love.</p>
+              </div>
+              <div class="features_link mg_top_20">
+                <a class="show_more fs_16 col_lk" href="#">Support</a>
+              </div>
+            </div>
+            <div class="col-xs-4">
+              <div class="features_asset mg_top_50">
+                <img src="assets/reliable.svg" alt="">
+              </div>
+              <div class="features_title">
+                <h4 class="title_h4 col_db">Reliable platform</h4>
+              </div>
+              <div class="features_desc mg_top_20">
+                <p class="fs_16 col_pa">More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+              </div>
+              <div class="features_link mg_top_20">
+                <a class="show_more fs_16 col_lk" href="#">Security</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- world map section -->
+      <div class="world_map">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+              <div class="world_map_tile text-center">
+                <h2 class="title_h2 col_w">Service your customers around the world from 12 regions.</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-6">
+              <div class="world_map_table">
+                <table>
+                  <tr>
+                    <td class="city_code text-uppercase">ams2</td>
+                    <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">ams3</td>
+                    <td class="city_desc text-capitalize">Amsterdam, Netherlands</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">blr1</td>
+                    <td class="city_desc text-capitalize">Bangalore, India</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">fra1</td>
+                    <td class="city_desc text-capitalize">Frankfurt, Germany</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">lon1</td>
+                    <td class="city_desc text-capitalize">London, UK</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">nyc1</td>
+                    <td class="city_desc text-capitalize">New York, USA</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div class="world_map_table">
+                <table>
+                  <tr>
+                    <td class="city_code text-uppercase">nyc2</td>
+                    <td class="city_desc text-capitalize">New York, USA</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">nyc3</td>
+                    <td class="city_desc text-capitalize">New York, USA</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">sf01</td>
+                    <td class="city_desc text-capitalize">San Francisco, USA</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">sf02</td>
+                    <td class="city_desc text-capitalize">San Francisco, USA</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">sgp1</td>
+                    <td class="city_desc text-capitalize">singapore</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                  <tr>
+                    <td class="city_code text-uppercase">tor1</td>
+                    <td class="city_desc text-capitalize">Toronto, Canada</td>
+                    <td class="text-right"><a class="city_link show_more" href>Test speed</a></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- DEVELOPMENT TEAMS SECTION -->
+      <div class="teams">
+        <div class="container">
+          <div class="row">
             <div class="col-xs-12">
-              <div class="footer_top_create">
-                <a href="#">Create your account</a>
+              <div class="teams_title text-center mg_bt_40">
+                <h2 class="title_h2 col_db">Development teams love DigitalOcean</h2>
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+              <div class="hidden-xs pagination_arrow arrow_left center_v">
+                <a href="#"></a>
+              </div>
+              <div class="teams_love_box text-center change_opacity">
+                <div class="teams_love_box_image mg_bt_50">
+                  <img src="assets/rockerbox.png" alt="">
+                </div>
+                <div class="teams_love_box_desc mg_bt_30">
+                  <p class="fs_22 col_pa">"We have been able to make scaling the technical infrastructure of our business cost effective and efficient".</p>
+                </div>
+                <div class="teams_love_box_name mg_bt_5">
+                  <span>Rick O'Toole</span>
+                </div>
+                <div class="teams_love_box_role mg_bt_30">
+                  <span class="fs_12 col_llg">Co-founder and CTO</span>
+                </div>
+                <div class="teams_love_box_link">
+                  <a class="show_more" href="#">Read story</a>
+                </div>
+              </div>
+              <div class="hidden-xs pagination_arrow arrow_right arrow_active center_v">
+                <a href="#"></a>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-xs-12">
+              <div class="pagination_links mg_top_30">
+                <ul>
+                  <li>
+                    <a class="page_item current_page" href=""></a>
+                  </li>
+                  <li>
+                    <a class="page_item" href=""></a>
+                  </li>
+                  <li>
+                    <a class="page_item" href=""></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER TOP SECTION -->
+      <div class="footer">
+        <div class="footer_top text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="footer_top_title">
+                  <h3>Get started now.</h3>
+                </div>
+              </div>
+            </div>
+            <div class="row mg_top_40">
+              <div class="col-xs-12">
+                <div class="footer_top_create">
+                  <a href="#">Create your account</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="footer_logo tooltip_wrapper">
+                  <span class="fs_12 tooltip_content">OceanDive home</span>
+                  <a href=""><img src="assets/small_logo.svg" alt=""></a>
+                </div>
+                <div class="footer_copyright mg_top_20">
+                  <span class="fs_14 col_ft">&copy; 2018 DigitalOcean, LLC. All rights reserved.</span>
+                </div>
+                <div class="footer_proud">
+                  <a href="#" class="fs_14 col_ft">Proudly made in NY</a>
+                </div>
+                <div class="footer_social_links mg_top_40 mg_bt_20">
+                  <ul>
+                    <li><a href="#"><i class="fab fa-twitter"></a></i></li>
+                    <li><a href=""><i class="fab fa-facebook-square"></a></i></li>
+                    <li><a href=""><i class="fab fa-instagram"></a></i></li>
+                    <li><a href=""><i class="fab fa-youtube"></a></i></li>
+                    <li><a href=""><i class="fab fa-linkedin"></a></i></li>
+                    <li><span class="icon-glass"></span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6 mg_bt_20">
+                <div class="footer_col_title">
+                  <h5 class="title_h5 col_w text-capitalize">Company</h5>
+                </div>
+                <div class="footer_col_list text-capitalize mg_top_20">
+                  <ul>
+                    <li><a class="fs_14 col_ft" href="#">about</a></li>
+                    <li><a class="fs_14 col_ft" href="#">leadership</a></li>
+                    <li><a class="fs_14 col_ft" href="#">blog</a></li>
+                    <li><a class="fs_14 col_ft" href="#">careers</a></li>
+                    <li><a class="fs_14 col_ft" href="#">partner network</a></li>
+                    <li><a class="fs_14 col_ft" href="#">referral program</a></li>
+                    <li><a class="fs_14 col_ft" href="#">events</a></li>
+                    <li><a class="fs_14 col_ft" href="#">press</a></li>
+                    <li><a class="fs_14 col_ft" href="#">legal &amp; security</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6 mg_bt_20">
+                <div class="footer_col_title">
+                  <h5 class="title_h5 col_w text-capitalize">products</h5>
+                </div>
+                <div class="footer_col_list text-capitalize mg_top_20">
+                  <ul>
+                    <li><a class="fs_14 col_ft" href="#">droplets</a></li>
+                    <li><a class="fs_14 col_ft" href="#">spaces</a></li>
+                    <li><a class="fs_14 col_ft" href="#">Kubernetes</a></li>
+                    <li><a class="fs_14 col_ft" href="#">load balancers</a></li>
+                    <li><a class="fs_14 col_ft" href="#">block storage</a></li>
+                    <li><a class="fs_14 col_ft" href="#">tool &amp; integrations </a></li>
+                    <li><a class="fs_14 col_ft" href="#">One-click apps</a></li>
+                    <li><a class="fs_14 col_ft" href="#">API</a></li>
+                    <li><a class="fs_14 col_ft" href="#">pricing</a></li>
+                    <li><a class="fs_14 col_ft" href="#">documentation</a></li>
+                    <li><a class="fs_14 col_ft" href="#">release notes</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6 mg_bt_20">
+                <div class="footer_col_title">
+                  <h5 class="title_h5 col_w text-capitalize">community</h5>
+                </div>
+                <div class="footer_col_list text-capitalize mg_top_20">
+                  <ul>
+                    <li><a class="fs_14 col_ft" href="#">tutorials</a></li>
+                    <li><a class="fs_14 col_ft" href="#">meetups</a></li>
+                    <li><a class="fs_14 col_ft" href="#">Q&amp;A</a></li>
+                    <li><a class="fs_14 col_ft" href="#">write for donations</a></li>
+                    <li><a class="fs_14 col_ft" href="#">droplets for demos</a></li>
+                    <li><a class="fs_14 col_ft" href="#">hatch</a></li>
+                    <li><a class="fs_14 col_ft" href="#">shop swag</a></li>
+                    <li><a class="fs_14 col_ft" href="#">research program</a></li>
+                    <li><a class="fs_14 col_ft" href="#">currents research</a></li>
+                    <li><a class="fs_14 col_ft" href="#">open source</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-6">
+                <div class="footer_col_title">
+                  <h5 class="title_h5 col_w text-capitalize">support</h5>
+                </div>
+                <div class="footer_col_list text-capitalize mg_top_20">
+                  <ul>
+                    <li><a class="fs_14 col_ft" href="#">contact support</a></li>
+                    <li><a class="fs_14 col_ft" href="#">FAQ</a></li>
+                    <li><a class="fs_14 col_ft" href="#">network status</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat_bot clear_aft">
+        <div class="bot_text_wrapper">
+          <div class="bot_close">
+            <a href=""><i class="fas fa-times-circle"></i></a>
+          </div>
+          <div class="bot_text">
+            <a href="" class="fs_16 col_db">Can I help you answer any questions<br>you have about DigitalOcean?</a>
+          </div>
+        </div>
+        <div class="bot_image">
+          <a href=""><img src="assets/chatbot.png" alt=""></a>
+        </div>
+        <div class="bot_count text-center">
+          <span class="fw_700 col_w">2</span>
         </div>
       </div>
     </div>

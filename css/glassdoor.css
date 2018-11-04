@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'glassdoor';
+  src: url('fonts/glassdoor.eot');
+  src: url('fonts/glassdoor_1.eot') format('embedded-opentype'),
+    url('fonts/glassdoor.ttf') format('truetype'),
+    url('fonts/glassdoor.woff') format('woff'),
+    url('fonts/glassdoor.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'glassdoor' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-glass:after {
+  content: "\e900";
+}
